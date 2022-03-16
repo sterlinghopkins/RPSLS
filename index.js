@@ -24,9 +24,40 @@ class Game {
                 console.log("playerTwo Wins!")
             }
         
+        }if(this.playerOne.choice === "1") {
+            if(this.playerTwo.choice === "0" || this.playerTwo.choice === "4"){
+                console.log("playerOne Wins!")
+            }
+            else if(this.playerTwo.choice === "2" || this.playerTwo.choice === "3"){
+                console.log("playerTwo Wins!")
+            }
+
+        }if(this.playerOne.choice === "2") {
+            if(this.playerTwo.choice === "1" || this.playerTwo.choice === "3"){
+                console.log("playerOne Wins!")
+            }
+            else if(this.playerTwo.choice === "0" || this.playerTwo.choice === "4"){
+                console.log("playerTwo Wins!")
+            }
+
+        }if(this.playerOne.choice === "3") {
+            if(this.playerTwo.choice === "1" || this.playerTwo.choice === "4"){
+                console.log("playerOne Wins!")
+            }
+            else if(this.playerTwo.choice === "0" || this.playerTwo.choice === "2"){
+                console.log("playerTwo Wins!")
+            }
+
+        }if(this.playerOne.choice === "4") {
+            if(this.playerTwo.choice === "0" || this.playerTwo.choice === "2"){
+                console.log("playerOne Wins!")
+            }
+            else if(this.playerTwo.choice === "1" || this.playerTwo.choice === "3"){
+                console.log("playerTwo Wins!")
+            }
         }
-           
-        
+
+            
     }
 }
 
