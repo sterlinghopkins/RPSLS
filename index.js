@@ -13,10 +13,20 @@ class Game {
         console.log(this.rules);
     }
     decideWinner(){
-        if(this.playerOne === this.playerTwo){
-            return("The result is a tie.");
+        if(this.playerOne.choice === this.playerTwo.choice){
+            console.log("This round is a tie")
+        }
+        else if(this.playerOne.choice === "0") {
+            if(this.playerTwo.choice === "2" || this.playerTwo.choice === "3"){
+                console.log("playerOne Wins!")
+            }
+            else if(this.playerTwo.choice === "1" || this.playerTwo.choice === "4"){
+                console.log("playerTwo Wins!")
+            }
+        
+        }
            
-        } 
+        
     }
 }
 
@@ -41,4 +51,4 @@ let game = new Game();
 game.playerOne.playerChoice();
 game.playerTwo.playerChoice();
 game.decideWinner();
-console.log(game);
+//console.log(game);
