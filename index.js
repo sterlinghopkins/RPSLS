@@ -13,6 +13,10 @@ class Game {
         console.log(this.rules);
     }
     decideWinner(){
+        for(let i =1; i <= 3; i++) {
+            console.log("Round #" + i)
+            this.playerOne.playerChoice();
+            this.playerTwo.playerChoice();    
         if(this.playerOne.choice === this.playerTwo.choice){
             console.log("This round is a tie")
         }
@@ -59,6 +63,9 @@ class Game {
 
             
     }
+    
+        }
+    
 }
 
 class Player {
@@ -79,7 +86,7 @@ class Player {
 let game = new Game();
 //game.displayRules();
 
-game.playerOne.playerChoice();
-game.playerTwo.playerChoice();
+//game.playerOne.playerChoice();
+//game.playerTwo.playerChoice();
 game.decideWinner();
-//console.log(game);
+console.log(game);
