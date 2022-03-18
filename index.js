@@ -27,38 +27,47 @@ class Game {
                 console.log("playerOne Wins!")
             }
             else if(this.playerTwo.choice === "1" || this.playerTwo.choice === "4"){
+                this.playerTwo.score ++;
                 console.log("playerTwo Wins!")
             }
         
         }if(this.playerOne.choice === "1") {
             if(this.playerTwo.choice === "0" || this.playerTwo.choice === "4"){
+                this.playerOne.score ++;
                 console.log("playerOne Wins!")
             }
             else if(this.playerTwo.choice === "2" || this.playerTwo.choice === "3"){
+                this.playerTwo.score ++;
                 console.log("playerTwo Wins!")
             }
 
         }if(this.playerOne.choice === "2") {
             if(this.playerTwo.choice === "1" || this.playerTwo.choice === "3"){
+                this.playerOne.score ++;
                 console.log("playerOne Wins!")
             }
             else if(this.playerTwo.choice === "0" || this.playerTwo.choice === "4"){
+                this.playerTwo.score ++;
                 console.log("playerTwo Wins!")
             }
 
         }if(this.playerOne.choice === "3") {
             if(this.playerTwo.choice === "1" || this.playerTwo.choice === "4"){
+                this.playerOne.score ++;
                 console.log("playerOne Wins!")
             }
             else if(this.playerTwo.choice === "0" || this.playerTwo.choice === "2"){
+                this.playerTwo.score ++;
                 console.log("playerTwo Wins!")
             }
 
         }if(this.playerOne.choice === "4") {
             if(this.playerTwo.choice === "0" || this.playerTwo.choice === "2"){
+                this.playerOne.score ++;
                 console.log("playerOne Wins!")
             }
             else if(this.playerTwo.choice === "1" || this.playerTwo.choice === "3"){
+                this.playerTwo.score ++;
                 console.log("playerTwo Wins!")
             }
         }
