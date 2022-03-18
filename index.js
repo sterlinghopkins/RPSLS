@@ -16,7 +16,7 @@ class Game {
         for(let i =1; i <= 3; i++) {
             console.log("Round #" + i)
             this.playerOne.playerChoice();
-            this.playerTwo.playerChoice();    
+            this.playerTwo.playerChoice();
         if(this.playerOne.choice === this.playerTwo.choice){
             console.log("This round is a tie")
         }
