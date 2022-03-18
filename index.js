@@ -8,6 +8,7 @@ class Game {
         "Lizard beats paper and Spock.", "Paper beats Spock and rock.", "Spock beats rock and scissors."];
         this.playerOne = new Player("Sterling");
         this.playerTwo = new Player("Ace");
+         
     }
     displayRules(){
         console.log(this.rules);
@@ -22,6 +23,7 @@ class Game {
         }
         else if(this.playerOne.choice === "0") {
             if(this.playerTwo.choice === "2" || this.playerTwo.choice === "3"){
+                this.playerOne.score ++;
                 console.log("playerOne Wins!")
             }
             else if(this.playerTwo.choice === "1" || this.playerTwo.choice === "4"){
@@ -65,6 +67,14 @@ class Game {
     }
     
         }
+    totalScore(){
+        if(this.playerOne.score === 3){
+            console.log("playerOne Is The Winner of RPSLS!");
+        }
+        else if (this.playerTwo.score === 3){
+            console.log("playerTwo Is The Winner of RPSLS!");
+        }
+    }    
     
 }
 
@@ -74,6 +84,8 @@ class Player {
         this.options = ["Choose 0 for Rock", "Choose 1 for Paper", "Choose 2 for Scissors", "Choose 3 for Lizard", "Choose 4 for Spock"];
         this.choice = null;
         this.name = name;
+        this.score = 0;
+        
     }
     playerChoice(){
         console.log(this.options);
@@ -90,3 +102,4 @@ let game = new Game();
 //game.playerTwo.playerChoice();
 game.decideWinner();
 console.log(game);
+game.totalScore();
